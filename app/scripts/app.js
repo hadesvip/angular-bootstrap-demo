@@ -8,7 +8,16 @@
  *
  * Main module of the application.
  */
+/*
 angular
   .module('angularBootstrapDemoApp', [
     'ngAnimate'
   ]);
+*/
+
+$(function(){
+
+  alert("1");
+
+
+});
