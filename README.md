@@ -5,5 +5,5 @@
   
 2. 注意点
   
-  * bootstrap 中字体替换成FontAwesome,在bower.json文件中添加"font-awesome":"^3.2.1"，然后npm install
+  * bootstrap 中字体替换成FontAwesome,在bower.json文件中添加"font-awesome":"^3.2.1"，然后bower install
 
