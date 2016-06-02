@@ -15,10 +15,6 @@ test/
 bower_components/
 dist/
 node_modules/
-test/
-.bowerrc
 .editorconfig
 .gitattributes
-.jscsrc
-.jshintrc
 .tmp/
