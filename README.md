@@ -3,6 +3,7 @@
   * 预先安装nodejs,grunt,bower,yoman
   * 前端使用angularjs+bootstrap
   * angularjs调试工具AngularJS Batarang
+  * 前后端分离测试工具http-server npm install http-server
   
 2. 注意点
   
