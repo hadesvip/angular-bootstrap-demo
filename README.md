@@ -2,6 +2,7 @@
 1. 环境搭建
   * 预先安装nodejs,grunt,bower,yoman
   * 前端使用angularjs+bootstrap
+  * angularjs调试工具AngularJS Batarang
   
 2. 注意点
   
