@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
+<!--  <base href="/">-->
   <meta charset="utf-8">
   <title>业务监控-六道</title>
   <meta name="description" content="">
@@ -10,8 +11,9 @@
   <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles/main.css">
 </head>
-<body>
-<div id="wrapper">
+<body ng-app="sixRealmsApp">
+<div id="wrapper" ng-controller="menuController">
+
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -25,29 +27,48 @@
     </div>
 
     <ul class="nav navbar-right top-nav">
-      <li class="dropdown">
+   <!--   <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa icon-envelope"></i> <b class="caret"></b></a>
       </li>
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa  icon-bell-alt"></i> <b class="caret"></b></a>
+      </li>-->
+      <li class="dropdown">
+        <a href="javascript:void(0)" style="cursor: default;" ><i class="fa  icon-user"></i> admin</a>
+        <!--
+        <ul class="dropdown-menu">
+          <li>
+            <a href="#"><i class="fa  icon-user"></i> 用户信息</a>
+          </li>
+          <li>
+            <a href="#"><i class="fa  icon-cog"></i> 用户设置</a>
+          </li>
+          <li class="divider"></li>
+          <li>
+            <a href="#"><i class="fa fa-fw icon-signout"></i>登出</a>
+          </li>
+        </ul>-->
       </li>
       <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa  icon-user"></i> admin <b class="caret"></b></a>
+        <a href="javascript:void(0)" id="logout"><i class="fa fa-fw icon-signout"></i>登出</a>
       </li>
     </ul>
+
+
+
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav side-nav">
         <li>
-          <a href="#"><i class="fa fa-fw icon-dashboard"></i> Dashboard</a>
+          <a href="#"><i class="fa fa-fw icon-cog"></i> 配置管理</a>
         </li>
         <li>
-          <a href="#"><i class="fa fa-fw icon-calendar"></i> Charts</a>
+          <a href="#"><i class="fa fa-fw  icon-lock"></i> 黑白名单</a>
         </li>
         <li>
-          <a href="tables.html"><i class="fa fa-fw icon-table"></i> Tables</a>
+          <a href="tables.html"><i class="fa fa-fw  icon-key"></i> 规则引擎</a>
         </li>
         <li>
-          <a href="forms.html"><i class="fa fa-fw icon-edit"></i> Forms</a>
+          <a href="forms.html"><i class="fa fa-fw icon-group"></i> 权限管理</a>
         </li>
         <li>
           <a href="bootstrap-elements.html"><i class="fa fa-fw icon-desktop"></i> Bootstrap Elements</a>
@@ -67,7 +88,7 @@
           </ul>
         </li>
         <li>
-          <a href="views/blank-page.html"><i class="fa fa-fw icon-file"></i> Blank Page</a>
+          <a ui-sref="blank-page"><i class="fa fa-fw icon-file"></i> Blank Page</a>
         </li>
         <li>
           <a href="index-rtl.html"><i class="fa fa-fw icon-dashboard"></i> RTL Dashboard</a>
@@ -77,23 +98,35 @@
   </nav>
 
   <div id="page-wrapper">
-    <div class="container-fluid">
-
-
-
+    <div ui-view class="container-fluid">
     </div>
-
   </div>
-
 </div>
 
+<div class="modal fade" id="logoutModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">提示</h4>
+      </div>
+      <div class="modal-body">
+        <h4 style="text-align: center;">是否登出本系统？</h4>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary">确定</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/angular/angular.js"></script>
-<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-<script src="bower_components/angular-animate/angular-animate.js"></script>
-<script src="scripts/app.js"></script>
-<script src="scripts/controllers/main.js"></script>
+<!--<script src="bower_components/angular-route/angular-route.min.js"></script>-->
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="scripts/index.js"></script>
 </body>
 </html>
