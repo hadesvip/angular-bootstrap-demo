@@ -59,10 +59,10 @@
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav side-nav">
         <li>
-          <a href="#"><i class="fa fa-fw icon-cog"></i> 配置管理</a>
+          <a href="#config-manage"><i class="fa fa-fw icon-cog"></i> 配置管理</a>
         </li>
         <li>
-          <a href="#"><i class="fa fa-fw  icon-lock"></i> 黑白名单</a>
+          <a href="#black-white-list"><i class="fa fa-fw  icon-lock"></i> 黑白名单</a>
         </li>
         <li>
           <a href="tables.html"><i class="fa fa-fw  icon-key"></i> 规则引擎</a>
@@ -70,7 +70,7 @@
         <li>
           <a href="forms.html"><i class="fa fa-fw icon-group"></i> 权限管理</a>
         </li>
-        <li>
+        <!--<li>
           <a href="bootstrap-elements.html"><i class="fa fa-fw icon-desktop"></i> Bootstrap Elements</a>
         </li>
         <li>
@@ -92,13 +92,18 @@
         </li>
         <li>
           <a href="index-rtl.html"><i class="fa fa-fw icon-dashboard"></i> RTL Dashboard</a>
-        </li>
+        </li>-->
       </ul>
     </div>
   </nav>
 
   <div id="page-wrapper">
     <div ui-view class="container-fluid">
+
+      <!--默认配置管理界面-->
+      <div ng-include="'views/main/config-manage.html'"></div>
+
+
     </div>
   </div>
 </div>

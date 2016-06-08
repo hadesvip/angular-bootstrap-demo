@@ -35,7 +35,7 @@
 
 $(function(){
     $("#logout").click(function(){
-        $("#logoutModal").modal("show");;
+        $("#logoutModal").modal("show");
     });
 });
 
@@ -45,11 +45,18 @@ angular.module('sixRealmsApp', ['ui.router'])
     })
     .config(function($stateProvider) {
         $stateProvider
-            .state('blank-page', {
-                url: '/blank-page',
-                templateUrl: 'views/main/blank-page.html',
+            .state('config-manage', {
+                url: '/config-manage',
+                templateUrl: 'views/main/config-manage.html',
                 controller: function($scope){
 
                 }
             })
+            .state('black-white-list', {
+            url: '/black-white-list',
+            templateUrl: 'views/main/black-white-list.html',
+            controller: function($scope){
+
+            }
+        })
     });
