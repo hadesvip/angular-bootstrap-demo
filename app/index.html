@@ -34,7 +34,7 @@
         <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa  icon-bell-alt"></i> <b class="caret"></b></a>
       </li>-->
       <li class="dropdown">
-        <a href="javascript:void(0)" style="cursor: default;" ><i class="fa  icon-user"></i> admin</a>
+        <a href="javascript:void(0)" style="cursor: default;" ><i class="fa  icon-user"></i>&nbsp;admin</a>
         <!--
         <ul class="dropdown-menu">
           <li>
@@ -50,7 +50,7 @@
         </ul>-->
       </li>
       <li class="dropdown">
-        <a href="javascript:void(0)" id="logout"><i class="fa fa-fw icon-signout"></i>登出</a>
+        <a href="javascript:void(0)" id="logout" data-toggle="modal" data-target="#logoutModal"><i class="fa fa-fw icon-signout"></i>&nbsp;登出</a>
       </li>
     </ul>
 
@@ -59,16 +59,16 @@
     <div class="collapse navbar-collapse navbar-ex1-collapse">
       <ul class="nav navbar-nav side-nav">
         <li>
-          <a href="#config-manage"><i class="fa fa-fw icon-cog"></i> 配置管理</a>
+          <a href="#config-manage"><i class="fa fa-fw icon-cog"></i>&nbsp;&nbsp;&nbsp;配置管理</a>
         </li>
         <li>
-          <a href="#black-white-list"><i class="fa fa-fw  icon-lock"></i> 黑白名单</a>
+          <a href="#black-white-list"><i class="fa fa-fw  icon-lock"></i>&nbsp;&nbsp;&nbsp;黑白名单</a>
         </li>
         <li>
-          <a href="tables.html"><i class="fa fa-fw  icon-key"></i> 规则引擎</a>
+          <a href="tables.html"><i class="fa fa-fw  icon-key"></i>&nbsp;规则引擎</a>
         </li>
         <li>
-          <a href="forms.html"><i class="fa fa-fw icon-group"></i> 权限管理</a>
+          <a href="forms.html"><i class="fa fa-fw icon-group"></i>&nbsp;权限管理</a>
         </li>
         <!--<li>
           <a href="bootstrap-elements.html"><i class="fa fa-fw icon-desktop"></i> Bootstrap Elements</a>
@@ -102,7 +102,6 @@
 
       <!--默认配置管理界面-->
       <div ng-include="'views/main/config-manage.html'"></div>
-
 
     </div>
   </div>
