@@ -33,11 +33,13 @@
 
  });*/
 
+/*
 $(function(){
     $("#logout").click(function(){
         $("#logoutModal").modal("show");
     });
 });
+*/
 
 angular.module('sixRealmsApp', ['ui.router'])
     .controller('menuController',function($scope){
@@ -57,6 +59,20 @@ angular.module('sixRealmsApp', ['ui.router'])
             templateUrl: 'views/main/black-white-list.html',
             controller: function($scope){
 
-            }
-        })
+                }
+            })
+            .state('engine-rules', {
+                url: '/engine-rules',
+                templateUrl: 'views/main/engine-rules.html',
+                controller: function($scope){
+
+                }
+            })
+            .state('user-roles', {
+                url: '/user-roles',
+                templateUrl: 'views/main/user-roles.html',
+                controller: function($scope){
+
+                }
+            })
     });

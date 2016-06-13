@@ -3,7 +3,7 @@
 <div class="row">
     <div class="col-lg-12">
         <h3 class="page-header">
-            配置管理
+            <b>配置管理</b>
         </h3>
     </div>
 </div>
@@ -11,7 +11,7 @@
         <div class="panel-heading">用户操作</div>
         <div class="panel-body">
             <form class="form-inline">
-                <div class="row" style="margin-top:30px;">
+                <div class="row" >
                     <div class="col-md-3 form-group">
                         <label for="exampleInputName2">条件1:</label>
                         &nbsp;&nbsp;
@@ -32,10 +32,55 @@
                     <div class="col-md-3" style="text-align: center">
                         <button type="button" class="btn btn-default btn-primary">查找</button>
                         &nbsp;&nbsp;
-                        <button type="button" class="btn btn-default btn-primary">新增</button>
+                        <button type="button" class="btn btn-default btn-primary" data-toggle="modal" data-target="#addConfig">新增</button>
                     </div>
                 </div>
             </form>
+        </div>
+    </div>
+
+    <!--新增模态框-->
+    <div class="modal fade" id="addConfig" role="dialog" tabindex="-1" aria-labelledby="add_title">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="add_title"><b>配置添加</b></h4>
+                </div>
+
+                <div class="modal-body">
+                        <form class="form-horizontal">
+                            <div class="row form-group">
+                                <label class="col-sm-2 control-label">参数1:</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control"  placeholder="参数1">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label class="col-sm-2 control-label">参数1:</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control"  placeholder="参数1">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label class="col-sm-2 control-label">参数1:</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control"  placeholder="参数1">
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label class="col-sm-2 control-label">参数1:</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control"  placeholder="参数1">
+                                </div>
+                            </div>
+                         </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">添加</button>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -55,7 +100,7 @@
                     <td>内容1</td>
                     <td>内容1</td>
                     <td>
-                        <button type="button" class="btn btn-danger">修改</button>
+                        <button type="button" class="btn btn-danger " data-toggle="modal" data-target="#addConfig">修改</button>
                     </td>
                 </tr>
                 <tr>
@@ -133,6 +178,52 @@
             </table>
         </div>
     </div>
+
+
+<!--新增模态框-->
+<div class="modal fade" id="updateConfig" role="dialog" tabindex="-1" aria-labelledby="update_title">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="update_title"><b>配置修改</b></h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    <div class="row form-group">
+                        <label class="col-sm-2 control-label">参数1:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control"  placeholder="参数1">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <label class="col-sm-2 control-label">参数1:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control"  placeholder="参数1">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <label class="col-sm-2 control-label">参数1:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control"  placeholder="参数1">
+                        </div>
+                    </div>
+                    <div class="row form-group">
+                        <label class="col-sm-2 control-label">参数1:</label>
+                        <div class="col-sm-8">
+                            <input type="text" class="form-control"  placeholder="参数1">
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">修改</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 
     <div class="row">
         <div class="col-md-3 col-md-offset-4">
