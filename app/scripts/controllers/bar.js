@@ -5,5 +5,7 @@
 
 angular.module('sixRealmsApp')
     .controller('userBarCtrl', function ($scope) {
-        $scope.user_name = 'admin';
+        $scope.user = {
+            name:'admin'
+        };
     });

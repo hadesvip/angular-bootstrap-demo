@@ -27,4 +27,5 @@ angular.module('sixRealmsApp', ['ui.router'])
                 controller: 'userRolesCtrl'
             })
     });
-angular.bootstrap(document, ['sixRealmsApp']);
+/*
+angular.bootstrap(document, ['sixRealmsApp']);*/

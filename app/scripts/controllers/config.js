@@ -6,4 +6,3 @@ angular.module('sixRealmsApp')
     .controller('configCtrl',function($scope){
 
     });
-

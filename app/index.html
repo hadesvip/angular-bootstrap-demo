@@ -1,136 +1,144 @@
 <!doctype html>
 <html>
 <head>
-<!--  <base href="/">-->
-  <meta charset="utf-8">
-  <title>业务监控-六道</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width">
-  <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>-->
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
-  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="styles/main.css">
-
+    <!--  <base href="/">-->
+    <meta charset="utf-8">
+    <title>业务监控-六道</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>-->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet"
+          href="bower_components/smalot-bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css"/>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
 <div id="wrapper">
-  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">业务监控-六道</a>
-    </div>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">业务监控-六道</a>
+        </div>
 
-    <ul class="nav navbar-right top-nav" ng-controller="userBarCtrl">
-   <!--   <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa icon-envelope"></i> <b class="caret"></b></a>
-      </li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa  icon-bell-alt"></i> <b class="caret"></b></a>
-      </li>-->
-      <li class="dropdown">
-        <a href="javascript:void(0)" style="cursor: default;" ><i class="fa  icon-user"></i>&nbsp;{{user_name}}</a>
-        <!--
-        <ul class="dropdown-menu">
-          <li>
-            <a href="#"><i class="fa  icon-user"></i> 用户信息</a>
-          </li>
-          <li>
-            <a href="#"><i class="fa  icon-cog"></i> 用户设置</a>
-          </li>
-          <li class="divider"></li>
-          <li>
-            <a href="#"><i class="fa fa-fw icon-signout"></i>登出</a>
-          </li>
-        </ul>-->
-      </li>
-      <li class="dropdown">
-        <a href="javascript:void(0)" id="logout" data-toggle="modal" data-target="#logoutModal"><i class="fa fa-fw icon-signout"></i>&nbsp;登出</a>
-      </li>
-    </ul>
-
-
-
-    <div class="collapse navbar-collapse navbar-ex1-collapse">
-      <ul class="nav navbar-nav side-nav">
-        <li>
-          <a href="#config-manage"><i class="fa fa-fw icon-cog"></i>&nbsp;&nbsp;&nbsp;配置管理</a>
-        </li>
-        <li>
-          <a href="#black-white-list"><i class="fa fa-fw  icon-lock"></i>&nbsp;&nbsp;&nbsp;黑白名单</a>
-        </li>
-        <li>
-          <a href="#engine-rules.html"><i class="fa fa-fw  icon-key"></i>&nbsp;规则引擎</a>
-        </li>
-        <li>
-          <a href="#user-roles.html"><i class="fa fa-fw icon-group"></i>&nbsp;权限管理</a>
-        </li>
-        <!--<li>
-          <a href="bootstrap-elements.html"><i class="fa fa-fw icon-desktop"></i> Bootstrap Elements</a>
-        </li>
-        <li>
-          <a href="bootstrap-grid.html"><i class="fa fa-fw icon-wrench"></i> Bootstrap Grid</a>
-        </li>
-        <li>
-          <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw icon-resize-vertical"></i> Dropdown <i class="fa fa-fw icon-caret-down"></i></a>
-          <ul id="demo" class="collapse">
-            <li>
-              <a href="#">Dropdown Item</a>
+        <ul class="nav navbar-right top-nav" ng-controller="userBarCtrl">
+            <!--   <li class="dropdown">
+                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa icon-envelope"></i> <b class="caret"></b></a>
+               </li>
+               <li class="dropdown">
+                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa  icon-bell-alt"></i> <b class="caret"></b></a>
+               </li>-->
+            <li class="dropdown">
+                <a href="javascript:void(0)" style="cursor: default;"><i class="fa  icon-user"></i>&nbsp;{{user.name}}</a>
+                <!--
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#"><i class="fa  icon-user"></i> 用户信息</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa  icon-cog"></i> 用户设置</a>
+                  </li>
+                  <li class="divider"></li>
+                  <li>
+                    <a href="#"><i class="fa fa-fw icon-signout"></i>登出</a>
+                  </li>
+                </ul>-->
             </li>
-            <li>
-              <a href="#">Dropdown Item</a>
+            <li class="dropdown">
+                <a href="javascript:void(0)" id="logout" data-toggle="modal" data-target="#logoutModal"><i
+                        class="fa fa-fw icon-signout"></i>&nbsp;登出</a>
             </li>
-          </ul>
-        </li>
-        <li>
-          <a ui-sref="blank-page"><i class="fa fa-fw icon-file"></i> Blank Page</a>
-        </li>
-        <li>
-          <a href="index-rtl.html"><i class="fa fa-fw icon-dashboard"></i> RTL Dashboard</a>
-        </li>-->
-      </ul>
+        </ul>
+
+
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav side-nav">
+                <li>
+                    <a href="#config-manage"><i class="fa fa-fw icon-cog"></i>&nbsp;&nbsp;&nbsp;配置管理</a>
+                </li>
+                <li>
+                    <a href="#black-white-list"><i class="fa fa-fw  icon-lock"></i>&nbsp;&nbsp;&nbsp;黑白名单</a>
+                </li>
+                <li>
+                    <a href="#engine-rules.html"><i class="fa fa-fw  icon-key"></i>&nbsp;规则引擎</a>
+                </li>
+                <li>
+                    <a href="#user-roles.html"><i class="fa fa-fw icon-group"></i>&nbsp;权限管理</a>
+                </li>
+                <!--<li>
+                  <a href="bootstrap-elements.html"><i class="fa fa-fw icon-desktop"></i> Bootstrap Elements</a>
+                </li>
+                <li>
+                  <a href="bootstrap-grid.html"><i class="fa fa-fw icon-wrench"></i> Bootstrap Grid</a>
+                </li>
+                <li>
+                  <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw icon-resize-vertical"></i> Dropdown <i class="fa fa-fw icon-caret-down"></i></a>
+                  <ul id="demo" class="collapse">
+                    <li>
+                      <a href="#">Dropdown Item</a>
+                    </li>
+                    <li>
+                      <a href="#">Dropdown Item</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a ui-sref="blank-page"><i class="fa fa-fw icon-file"></i> Blank Page</a>
+                </li>
+                <li>
+                  <a href="index-rtl.html"><i class="fa fa-fw icon-dashboard"></i> RTL Dashboard</a>
+                </li>-->
+            </ul>
+        </div>
+    </nav>
+
+    <div id="page-wrapper">
+        <div ui-view class="container-fluid">
+
+            <!--默认配置管理界面-->
+            <div ng-include="'views/main/config-manage.html'"></div>
+
+        </div>
     </div>
-  </nav>
-
-  <div id="page-wrapper">
-    <div ui-view class="container-fluid">
-
-      <!--默认配置管理界面-->
-      <div ng-include="'views/main/config-manage.html'"></div>
-
-    </div>
-  </div>
 </div>
 
 <div class="modal fade" id="logoutModal" tabindex="-1">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">提示</h4>
-      </div>
-      <div class="modal-body">
-        <h4 style="text-align: center;">是否登出本系统？</h4>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-        <button type="button" class="btn btn-primary">确定</button>
-      </div>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">提示</h4>
+            </div>
+            <div class="modal-body">
+                <h4 style="text-align: center;">是否登出本系统？</h4>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary">确定</button>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
-
-<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript"
+        src="bower_components/smalot-bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript"
+        src="bower_components/smalot-bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+
 <script src="scripts/app.js"></script>
 <script src="scripts/controllers/bar.js"></script>
 <script src="scripts/controllers/config.js"></script>
-
+<script type="text/javascript">
+    angular.bootstrap(document, ['sixRealmsApp']);
+</script>
 </body>
 </html>
