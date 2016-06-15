@@ -21,10 +21,10 @@ angular.module('sixRealmsApp', ['ui.router'])
                 templateUrl: 'views/main/engine-rules.html',
                 controller: 'engineRulesCtrl'
             })
-            .state('user-roles', {
-                url: '/user-roles',
-                templateUrl: 'views/main/user-roles.html',
-                controller: 'userRolesCtrl'
+            .state('user-manage', {
+                url: '/user-manage',
+                templateUrl: 'views/main/user-manage.html',
+                controller: 'userManageCtrl'
             })
     });
 /*

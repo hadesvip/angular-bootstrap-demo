@@ -23,10 +23,10 @@
                         <input type="text" class="form-control" placeholder="Jane Doe">
                     </div>
 
-                    <div class="col-md-4 form-group">
+                    <div class="col-md-4 form-group ">
                         <label for="exampleInputName2">条件1:</label>
                         &nbsp;&nbsp;
-                        <input type="text" size="20" class="form-control form_datetime"  placeholder="Jane Doe" readonly/>
+                        <input type="text" class="form-control form_datetime"  placeholder="Jane Doe" readonly/>
                     </div>
 
                     <div class="col-md-2" style="text-align: center">
@@ -252,7 +252,9 @@
     $(".form_datetime").datetimepicker(
             {
                 format: 'yyyy-mm-dd hh:ii',
-                language: 'zh-CN'
+                language: 'zh-CN',
+                autoclose: true,
+                todayBtn: true
             }
     );
 </script>

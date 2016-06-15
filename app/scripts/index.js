@@ -29,7 +29,7 @@ angular.module('sixRealmsApp', ['ui.router'])
             })
             .state('user-roles', {
                 url: '/user-roles',
-                templateUrl: 'views/main/user-roles.html',
+                templateUrl: 'views/main/user-manage.html',
                 controller: function ($scope) {
 
                 }

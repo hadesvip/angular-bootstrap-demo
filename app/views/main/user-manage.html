@@ -1,0 +1,193 @@
+<!--权限管理-->
+<div ng-controller="userManageCtrl">
+    <div class="row">
+        <div class="col-lg-12">
+            <h3 class="page-header">
+                <b>用户管理</b>
+            </h3>
+        </div>
+    </div>
+    <div class="panel panel-success" style="margin-top:30px;">
+        <div class="panel-heading">用户操作</div>
+        <div class="panel-body">
+            <form class="form-inline">
+                <div class="row">
+                    <div class="col-md-3 form-group">
+                        <label for="exampleInputName2">条件1:</label>
+                        &nbsp;&nbsp;
+                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="exampleInputName2">条件1:</label>
+                        &nbsp;&nbsp;
+                        <input type="text" class="form-control" placeholder="Jane Doe">
+                    </div>
+
+                    <div class="col-md-4 form-group ">
+                        <label for="exampleInputName2">条件1:</label>
+                        &nbsp;&nbsp;
+                        <input type="text" class="form-control form_datetime" placeholder="Jane Doe" readonly/>
+                    </div>
+
+                    <div class="col-md-2" style="text-align: center">
+                        <button type="button" class="btn btn-default btn-primary">查找</button>
+                        &nbsp;&nbsp;
+                        <button type="button" class="btn btn-default btn-primary" data-toggle="modal"
+                                data-target="#addConfig">新增
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!--新增模态框-->
+    <div class="modal fade" id="addConfig" role="dialog" tabindex="-1" aria-labelledby="add_title">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="add_title"><b>配置添加</b></h4>
+                </div>
+
+                <div class="modal-body">
+                    <form class="form-horizontal">
+                        <div class="row form-group">
+                            <label class="col-sm-2 control-label">参数1:</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" placeholder="参数1">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label class="col-sm-2 control-label">参数1:</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" placeholder="参数1">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label class="col-sm-2 control-label">参数1:</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" placeholder="参数1">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label class="col-sm-2 control-label">参数1:</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" placeholder="参数1">
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">添加</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 50px;">
+        <div class="col-md-12">
+            <table class="table table-hover table-bordered text-center">
+                <tr>
+                    <th style="text-align: center">用户名</th>
+                    <th style="text-align: center">上次登录时间</th>
+                    <th style="text-align: center">角色</th>
+                    <th style="text-align: center">可访问的菜单</th>
+                    <th style="text-align: center">操作</th>
+                </tr>
+                <tr ng-repeat="user in users">
+                    <td>{{user.name}}</td>
+                    <td>{{user.loginDate}}</td>
+                    <td>{{user.roles}}</td>
+                    <td>{{user.accessMenus}}</td>
+                    <td>
+                        <button type="button" class="btn btn-danger " data-toggle="modal" data-target="#addConfig">
+                            权限配置
+                        </button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <!--新增模态框-->
+    <div class="modal fade" id="updateConfig" role="dialog" tabindex="-1" aria-labelledby="update_title">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="update_title"><b>配置修改</b></h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal">
+                        <div class="row form-group">
+                            <label class="col-sm-2 control-label">参数1:</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" placeholder="参数1">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label class="col-sm-2 control-label">参数1:</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" placeholder="参数1">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label class="col-sm-2 control-label">参数1:</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" placeholder="参数1">
+                            </div>
+                        </div>
+                        <div class="row form-group">
+                            <label class="col-sm-2 control-label">参数1:</label>
+                            <div class="col-sm-8">
+                                <input type="text" class="form-control" placeholder="参数1">
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">修改</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-3 col-md-offset-4">
+            <nav>
+                <ul class="pagination">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+<script>
+    $(".form_datetime").datetimepicker(
+            {
+                format: 'yyyy-mm-dd hh:ii',
+                language: 'zh-CN',
+                autoclose: true,
+                todayBtn: true
+            }
+    );
+</script>
