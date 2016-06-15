@@ -27,7 +27,7 @@
 	  * Mongodb 3.2
 	- 权限接入
 	  * Shiro控制权限
-	- 日记接入
+	- 用户行为日记接入后期大数据分析
 	  * Elasticsearch
 	  
 ## angular-bootstrap-demo
