@@ -29,8 +29,7 @@
 	  * Shiro控制权限
 	- 日记接入
 	  * Elasticsearch
-
-
+	  
 ## angular-bootstrap-demo
 1. 环境搭建
   * 预先安装nodejs,grunt,bower,yoman
