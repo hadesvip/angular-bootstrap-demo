@@ -31,6 +31,11 @@ angular.module('sixRealmsApp', ['ui.router'])
                 templateUrl: 'views/main/user-roles.html',
                 controller: 'userRolesCtrl'
             })
+            .state('system-resources',{
+                url:'/system-resources',
+                templateUrl: 'views/main/resources.html',
+                controller: 'resourcesCtrl'
+            });
     });
 /*
 angular.bootstrap(document, ['sixRealmsApp']);*/

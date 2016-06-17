@@ -1,158 +1,160 @@
 <!--黑白名单-->
-<div class="row">
-    <div class="col-lg-12">
-        <h3 class="page-header">
-            黑白名单
-        </h3>
+<div ng-controller="blackWhiteListCtrl">
+    <div class="row">
+        <div class="col-lg-12">
+            <h3 class="page-header">
+               <b>黑白名单</b>
+            </h3>
+        </div>
     </div>
-</div>
-<div class="panel panel-success" style="margin-top:30px;">
-    <div class="panel-heading">用户操作</div>
-    <div class="panel-body">
-        <form class="form-inline">
-            <div class="row" style="margin-top:30px;">
-                <div class="col-md-3 form-group">
-                    <label for="exampleInputName2">条件1:</label>
-                    &nbsp;&nbsp;
-                    <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
-                </div>
-                <div class="col-md-3 form-group">
-                    <label for="exampleInputName2">条件1:</label>
-                    &nbsp;&nbsp;
-                    <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
-                </div>
+    <div class="panel panel-success" style="margin-top:30px;">
+        <div class="panel-heading">用户操作</div>
+        <div class="panel-body">
+            <form class="form-inline">
+                <div class="row" style="margin-top:30px;">
+                    <div class="col-md-3 form-group">
+                        <label for="exampleInputName2">条件1:</label>
+                        &nbsp;&nbsp;
+                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                    </div>
+                    <div class="col-md-3 form-group">
+                        <label for="exampleInputName2">条件1:</label>
+                        &nbsp;&nbsp;
+                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                    </div>
 
-                <div class="col-md-3 form-group">
-                    <label for="exampleInputName2">条件1:</label>
-                    &nbsp;&nbsp;
-                    <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
-                </div>
+                    <div class="col-md-3 form-group">
+                        <label for="exampleInputName2">条件1:</label>
+                        &nbsp;&nbsp;
+                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                    </div>
 
-                <div class="col-md-3" style="text-align: center">
-                    <button type="button" class="btn btn-default btn-primary">查找</button>
-                    &nbsp;&nbsp;
-                    <button type="button" class="btn btn-default btn-primary">新增</button>
+                    <div class="col-md-3" style="text-align: center">
+                        <button type="button" class="btn btn-default btn-primary">查找</button>
+                        &nbsp;&nbsp;
+                        <button type="button" class="btn btn-default btn-primary">新增</button>
+                    </div>
                 </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
-</div>
 
-<div class="row" style="margin-top: 50px;">
-    <div class="col-md-12">
-        <table class="table table-hover table-bordered text-center">
-            <tr>
-                <th style="text-align: center">标题1</th>
-                <th style="text-align: center">标题2</th>
-                <th style="text-align: center">标题3</th>
-                <th style="text-align: center">标题4</th>
-                <th style="text-align: center">操作</th>
-            </tr>
-            <tr>
-                <td>内容1</td>
-                <td>内容1</td>
-                <td>内容1</td>
-                <td>内容1</td>
-                <td>
-                    <button type="button" class="btn btn-danger">修改</button>
-                </td>
-            </tr>
-            <tr>
-                <td>内容1</td>
-                <td>内容1</td>
-                <td>内容1</td>
-                <td>内容1</td>
-                <td>
-                    <button type="button" class="btn btn-danger">修改</button>
-                </td>
-            </tr>
-            <tr>
-                <td>内容1</td>
-                <td>内容1</td>
-                <td>内容1</td>
-                <td>内容1</td>
-                <td>
-                    <button type="button" class="btn btn-danger">修改</button>
-                </td>
-            </tr>
-            <tr>
-                <td>内容1</td>
-                <td>内容1</td>
-                <td>内容1</td>
-                <td>内容1</td>
-                <td>
-                    <button type="button" class="btn btn-danger">修改</button>
-                </td>
-            </tr>
-            <tr>
-                <td>内容1</td>
-                <td>内容1</td>
-                <td>内容1</td>
-                <td>内容1</td>
-                <td>
-                    <button type="button" class="btn btn-danger">修改</button>
-                </td>
-            </tr>
-            <tr>
-                <td>内容1</td>
-                <td>内容1</td>
-                <td>内容1</td>
-                <td>内容1</td>
-                <td>
-                    <button type="button" class="btn btn-danger">修改</button>
-                </td>
-            </tr>
-            <tr>
-                <td>内容1</td>
-                <td>内容1</td>
-                <td>内容1</td>
-                <td>内容1</td>
-                <td>
-                    <button type="button" class="btn btn-danger">修改</button>
-                </td>
-            </tr>
-            <tr>
-                <td>内容1</td>
-                <td>内容1</td>
-                <td>内容1</td>
-                <td>内容1</td>
-                <td>
-                    <button type="button" class="btn btn-danger">修改</button>
-                </td>
-            </tr>
-            <tr>
-                <td>内容1</td>
-                <td>内容1</td>
-                <td>内容1</td>
-                <td>内容1</td>
-                <td>
-                    <button type="button" class="btn btn-danger">修改</button>
-                </td>
-            </tr>
-        </table>
+    <div class="row" style="margin-top: 50px;">
+        <div class="col-md-12">
+            <table class="table table-hover table-bordered text-center">
+                <tr>
+                    <th style="text-align: center">标题1</th>
+                    <th style="text-align: center">标题2</th>
+                    <th style="text-align: center">标题3</th>
+                    <th style="text-align: center">标题4</th>
+                    <th style="text-align: center">操作</th>
+                </tr>
+                <tr>
+                    <td>内容1</td>
+                    <td>内容1</td>
+                    <td>内容1</td>
+                    <td>内容1</td>
+                    <td>
+                        <button type="button" class="btn btn-danger">修改</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>内容1</td>
+                    <td>内容1</td>
+                    <td>内容1</td>
+                    <td>内容1</td>
+                    <td>
+                        <button type="button" class="btn btn-danger">修改</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>内容1</td>
+                    <td>内容1</td>
+                    <td>内容1</td>
+                    <td>内容1</td>
+                    <td>
+                        <button type="button" class="btn btn-danger">修改</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>内容1</td>
+                    <td>内容1</td>
+                    <td>内容1</td>
+                    <td>内容1</td>
+                    <td>
+                        <button type="button" class="btn btn-danger">修改</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>内容1</td>
+                    <td>内容1</td>
+                    <td>内容1</td>
+                    <td>内容1</td>
+                    <td>
+                        <button type="button" class="btn btn-danger">修改</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>内容1</td>
+                    <td>内容1</td>
+                    <td>内容1</td>
+                    <td>内容1</td>
+                    <td>
+                        <button type="button" class="btn btn-danger">修改</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>内容1</td>
+                    <td>内容1</td>
+                    <td>内容1</td>
+                    <td>内容1</td>
+                    <td>
+                        <button type="button" class="btn btn-danger">修改</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>内容1</td>
+                    <td>内容1</td>
+                    <td>内容1</td>
+                    <td>内容1</td>
+                    <td>
+                        <button type="button" class="btn btn-danger">修改</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>内容1</td>
+                    <td>内容1</td>
+                    <td>内容1</td>
+                    <td>内容1</td>
+                    <td>
+                        <button type="button" class="btn btn-danger">修改</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
-</div>
 
-<div class="row">
-    <div class="col-md-3 col-md-offset-4">
-        <nav>
-            <ul class="pagination">
-                <li>
-                    <a href="#" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                    </a>
-                </li>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li>
-                    <a href="#" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+    <div class="row">
+        <div class="col-md-3 col-md-offset-4">
+            <nav>
+                <ul class="pagination">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </div>
 </div>

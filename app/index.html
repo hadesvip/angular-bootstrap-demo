@@ -34,7 +34,8 @@
                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa  icon-bell-alt"></i> <b class="caret"></b></a>
                </li>-->
             <li class="dropdown">
-                <a href="javascript:void(0)" style="cursor: default;"><i class="fa  icon-user"></i>&nbsp;{{user.name}}</a>
+                <a href="javascript:void(0)" style="cursor: default;"><i
+                        class="fa  icon-user"></i>&nbsp;{{user.name}}</a>
                 <!--
                 <ul class="dropdown-menu">
                   <li>
@@ -67,17 +68,21 @@
                 <li>
                     <a href="#engine-rules"><i class="fa fa-fw  icon-key"></i>&nbsp;规则引擎</a>
                 </li>
-               <!-- <li>
-                    <a href="#user-manage"><i class="fa fa-fw icon-group"></i>&nbsp;用户管理</a>
-                </li>-->
+                <!-- <li>
+                     <a href="#user-manage"><i class="fa fa-fw icon-group"></i>&nbsp;用户管理</a>
+                 </li>-->
                 <li>
-                    <a href="javascript:;" data-toggle="collapse" data-target="#user-menus"><i class="fa fa-fw icon-group"></i> 用户管理 <i class="fa fa-fw icon-caret-down"></i></a>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#user-menus"><i
+                            class="fa fa-fw icon-hand-down"></i>&nbsp;系统管理 <i class="fa fa-fw icon-caret-down"></i></a>
                     <ul id="user-menus" class="collapse">
                         <li>
-                            <a href="#user-manage">用户管理</a>
+                            <a href="#user-manage"><i class="fa fa-fw icon-user"></i>&nbsp;用户管理</a>
                         </li>
                         <li>
-                            <a href="#user-roles">权限管理</a>
+                            <a href="#user-roles"><i class="fa fa-fw icon-group"></i>&nbsp;角色管理</a>
+                        </li>
+                        <li>
+                            <a href="#system-resources"><i class="fa fa-fw  icon-reorder"></i>&nbsp;资源管理</a>
                         </li>
                     </ul>
                 </li>
@@ -150,7 +155,10 @@
 <script src="scripts/controllers/bar.js"></script>
 <script src="scripts/controllers/config.js"></script>
 <script src="scripts/controllers/userManage.js" charset="utf-8"></script>
+<script src="scripts/controllers/blackWhiteList.js" charset="utf-8"></script>
+<script src="scripts/controllers/engineRules.js" charset="utf-8"></script>
 <script src="scripts/controllers/userRoles.js" charset="utf-8"></script>
+<script src="scripts/controllers/resouces.js" charset="utf-8"></script>
 <script type="text/javascript">
     angular.bootstrap(document, ['sixRealmsApp']);
 </script>

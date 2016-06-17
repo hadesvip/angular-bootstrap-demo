@@ -25,6 +25,9 @@ body {
   width: 100%;
   padding: 0;
   background-color: #fff;
+  position: fixed;
+  bottom: 0px;
+  top:50px;
 }
 
 .huge {
@@ -33,12 +36,13 @@ body {
 }
 
 @media(min-width:768px) {
-  #wrapper {
+  /*#wrapper {
     padding-left: 225px;
   }
-
+*/
   #page-wrapper {
-    padding: 10px;
+  /*  padding: 10px;*/
+    padding-left: 225px;
   }
 }
 
