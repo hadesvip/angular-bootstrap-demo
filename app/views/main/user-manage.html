@@ -1,4 +1,5 @@
-<!--权限管理-->
+<!--用户管理-->
+
 <div ng-controller="userManageCtrl">
     <div class="row">
         <div class="col-lg-12">
@@ -96,14 +97,14 @@
                     <th style="text-align: center">可访问的菜单</th>
                     <th style="text-align: center">操作</th>
                 </tr>
-                <tr ng-repeat="user in users">
-                    <td>{{user.name}}</td>
-                    <td>{{user.loginDate}}</td>
-                    <td>{{user.roles}}</td>
-                    <td>{{user.accessMenus}}</td>
-                    <td>
+                <tr  ng-repeat="user in users">
+                    <td style="vertical-align: middle" >{{user.name}}</td>
+                    <td style="vertical-align: middle">{{user.loginDate}}</td>
+                    <td style="vertical-align: middle">{{user.roles}}</td>
+                    <td style="vertical-align: middle">{{user.accessMenus}}</td>
+                    <td style="vertical-align: middle">
                         <button type="button" class="btn btn-danger " data-toggle="modal" data-target="#addConfig">
-                            权限配置
+                            用户设置
                         </button>
                     </td>
                 </tr>

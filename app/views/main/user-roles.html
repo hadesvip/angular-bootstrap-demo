@@ -1,0 +1,116 @@
+<!--用户权限管理-->
+<div ng-controller="userRolesCtrl">
+    <div class="row">
+        <div class="col-lg-12">
+            <h3 class="page-header">
+                <b>权限管理</b>
+            </h3>
+        </div>
+    </div>
+</div>
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        角色管理
+    </div>
+    <div class="panel-body">
+        <table class="table">
+            <tr>
+                <th>角色名</th>
+                <th>角色描述</th>
+                <th>角色资源</th>
+                <th>
+                    <label>操作</label>
+                    <button type="button" style="position: relative;left: 250px;" class="btn btn-success">添加角色</button>
+                </th>
+            </tr>
+            <tr>
+                <td>管理员</td>
+                <td>拥有系统顶级权限</td>
+                <td>配置管理,黑名单，规则引擎，用户管理</td>
+                <td>
+                    <button type="button" class="btn btn-danger">删除角色</button>
+                    <button type="button" class="btn btn-primary">角色修改</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>普通用户</td>
+                <td>只拥有一些普通权限</td>
+                <td>配置查看，黑白名单查看</td>
+                <td>
+                    <button type="button" class="btn btn-danger">删除角色</button>
+                    <button type="button" class="btn btn-primary">角色修改</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!--  <div class="panel-footer">
+          <button type="button" class="btn btn-danger">添加角色</button>
+      </div>-->
+</div>
+
+<div class="panel panel-info">
+    <div class="panel-heading">资源管理</div>
+    <div class="panel-body">
+        <div class="panel panel-default">
+            <div class="panel-heading">配置管理</div>
+            <div class="panel-body">
+                <table class="table">
+                    <tr>
+                        <td style="border: none;"><input type="checkbox"><label>用户查询</label></td>
+                        <td style="border: none;"><input type="checkbox"><label>用户查询</label></td>
+                        <td style="border: none;"><input type="checkbox"><label>用户查询</label></td>
+                        <td style="border: none;"><input type="checkbox"><label>用户查询</label></td>
+                        <td style="border: none;"><input type="checkbox"><label>用户查询</label></td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">规则引擎</div>
+            <div class="panel-body">
+                <table class="table">
+                    <tr>
+                        <td style="border: none;"><input type="checkbox"><label>用户查询</label></td>
+                        <td style="border: none;"><input type="checkbox"><label>用户查询</label></td>
+                        <td style="border: none;"><input type="checkbox"><label>用户查询</label></td>
+                        <td style="border: none;"><input type="checkbox"><label>用户查询</label></td>
+                        <td style="border: none;"><input type="checkbox"><label>用户查询</label></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">黑白名单</div>
+            <div class="panel-body">
+                <table class="table">
+                    <tr>
+                        <td style="border: none;"><input type="checkbox"><label>用户查询</label></td>
+                        <td style="border: none;"><input type="checkbox"><label>用户查询</label></td>
+                        <td style="border: none;"><input type="checkbox"><label>用户查询</label></td>
+                        <td style="border: none;"><input type="checkbox"><label>用户查询</label></td>
+                        <td style="border: none;"><input type="checkbox"><label>用户查询</label></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">用户管理</div>
+            <div class="panel-body">
+                <table class="table">
+                    <tr>
+                        <td style="border: none;"><input type="checkbox"><label>用户查询</label></td>
+                        <td style="border: none;"><input type="checkbox"><label>用户查询</label></td>
+                        <td style="border: none;"><input type="checkbox"><label>用户查询</label></td>
+                        <td style="border: none;"><input type="checkbox"><label>用户查询</label></td>
+                        <td style="border: none;"><input type="checkbox"><label>用户查询</label></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

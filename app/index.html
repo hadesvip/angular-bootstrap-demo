@@ -67,8 +67,19 @@
                 <li>
                     <a href="#engine-rules"><i class="fa fa-fw  icon-key"></i>&nbsp;规则引擎</a>
                 </li>
-                <li>
+               <!-- <li>
                     <a href="#user-manage"><i class="fa fa-fw icon-group"></i>&nbsp;用户管理</a>
+                </li>-->
+                <li>
+                    <a href="javascript:;" data-toggle="collapse" data-target="#user-menus"><i class="fa fa-fw icon-group"></i> 用户管理 <i class="fa fa-fw icon-caret-down"></i></a>
+                    <ul id="user-menus" class="collapse">
+                        <li>
+                            <a href="#user-manage">用户管理</a>
+                        </li>
+                        <li>
+                            <a href="#user-roles">权限管理</a>
+                        </li>
+                    </ul>
                 </li>
                 <!--<li>
                   <a href="bootstrap-elements.html"><i class="fa fa-fw icon-desktop"></i> Bootstrap Elements</a>
@@ -139,6 +150,7 @@
 <script src="scripts/controllers/bar.js"></script>
 <script src="scripts/controllers/config.js"></script>
 <script src="scripts/controllers/userManage.js" charset="utf-8"></script>
+<script src="scripts/controllers/userRoles.js" charset="utf-8"></script>
 <script type="text/javascript">
     angular.bootstrap(document, ['sixRealmsApp']);
 </script>
